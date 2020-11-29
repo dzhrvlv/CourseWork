@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Метод Бисекции</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Решение нелинейных уравнений методом половинного деления</h1>
+    </header>
+    <div class="info">
+      <h2>О методе</h2>
+      <p>
+        Метод бисекции или метод деления отрезка пополам — простейший численный
+        метод для решения нелинейных уравнений вида f(x)=0. Предполагается
+        только непрерывность функции f(x). Поиск основывается на теореме о
+        промежуточных значениях.
+      </p>
+    </div>
+    <main>
+      <section class="input">
+        <h2>Входные параметры</h2>
+        <form
+          action="http://localhost:8080/bisection"
+          method="POST"
+          target="area"
+          autocomplete="off"
+        >
+        <div>
+            <input type="text" name="ip6" size="1"/>
+            <p>x<sup><i><small>6</small></i></sup>+</p>
+            <input type="text" name="ip5" size="1" />
+            <p>x<sup><i><small>5</small></i></sup>+</p>
+            <input type="text" name="ip4" size="1" />
+            <p>x<sup><i><small>4</small></i></sup>+</p>
+            <input type="text" name="ip3" size="1" />
+            <p>x<sup><i><small>3</small></i></sup>+</p>
+            <input type="text" name="ip2" size="1" />
+            <p>x<sup><i><small>2</small></i></sup>+</p>
+            <input type="text" name="ip1" size="1" />
+            <p>x<sup><i><small></small></i></sup>+</p>
+            <input type="text" name="ip0" size="1" />
+            <p>=0<sup><i><small></small></i></sup></p>
+          </div>
+          <div>
+            <p>Интервал поиска корня уравнения:&nbsp</p>
+            <input type="text" name="a" size="1"/>
+            <p>&nbsp:&nbsp</p>
+            <input type="text" name="b" size="1" />
+          </div>
+          <div>
+            <p>Погрешность:&nbsp</p>
+            <input type="text" name="e" size="1" />
+          </div>
+          <button type="submit">Вычислить</button>
+        </form>
+      </section>
+      <section class="output">
+        <h2>Решение</h2>
+          <p><iframe name="area" width="500" height="200"></iframe></p>
+      </section>
+    </main>
+  </body>
+</html>
